@@ -1,0 +1,31 @@
+<!-- greeter.component.html -->
+<div>
+  <md-card *ngIf="user.name && user.quote" class="greeter-output">
+    <md-card-title>{{user.name}}'s quote</md-card-title>
+    <md-card-content style="text-align: left;">{{user.quote}}</md-card-content>
+  </md-card>
+  <md-card class="greeter-input">
+    <md-card-content>
+      <table class="full-width">
+        <tr>
+          <td>
+            <md-input-container class="full-width input-container">
+              <input mdInput [(ngModel)]="user.name" maxLength="64" placeholder="Name">
+              <md-hint align="start"><strong>Give your name</strong></md-hint>
+              <md-hint align="end">{{user.name.length}} / 64</md-hint>
+            </md-input-container>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-input-container class="full-width input-container">
+              <textarea mdInput [(ngModel)]="user.quote" maxlength="256" placeholder="Message"></textarea>
+              <md-hint align="start"><strong>Give some meaningful quote</strong></md-hint>
+              <md-hint align="end">{{user.quote.length}} / 256</md-hint>
+            </md-input-container>
+          </td>
+        </tr>
+      </table>
+    </md-card-content>
+  </md-card>
+</div>

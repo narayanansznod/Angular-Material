@@ -1,0 +1,21 @@
+.greeter-input {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.75em;
+}
+
+.full-width {
+  width: 95%;
+}
+
+.greeter-output {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.75em;
+}
+
+.input-container {
+  padding: 1.0em;
+}
