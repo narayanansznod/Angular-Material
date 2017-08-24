@@ -1,3 +1,5 @@
+
+
 .greeter-input {
   width: 50%;
   margin-left: auto;
@@ -18,4 +20,9 @@
 
 .input-container {
   padding: 1.0em;
+}
+
+
+.example-full-width {
+  width: 100%;
 }
