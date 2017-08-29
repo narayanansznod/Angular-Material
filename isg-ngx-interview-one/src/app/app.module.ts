@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { GreeterComponent } from './greeter/greeter.component';
 import { SubpageComponent } from './subpage/subpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MdNativeDateModule,
+  DateAdapter,
+  MD_DATE_FORMATS } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    MdNativeDateModule,
     RouterModule.forRoot([{path: 'subpage', component: SubpageComponent},
                           {path: 'greeter', component: GreeterComponent},
                           {path: 'navbar', component: NavbarComponent}
